@@ -10,13 +10,13 @@
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
-/* MAIN GAME CONTAINER */
 .maincontent {
-    position: relative;
     width: 100%;
-    min-height: 80vh;   /* allows page to expand */
-    overflow-x: hidden;
+    min-height: 80vh;   /* allow it to grow if content exceeds */
     background: #f1f1f1;
+    position: relative;
+    padding: 20px;
+    display: block;      /* remove flex + center alignment */
 }
 
 /* GAME BACKGROUND */
