@@ -15,8 +15,7 @@
     position: relative;       /* container for absolute elements */
     width: 100%;
     height: 80vh;             /* fits below header/nav, adjust as needed */
-    overflow: hidden;         /* prevents game overflow */
-    touch-action: manipulation;
+    overflow-x: hidden;         /* prevents game overflow */
     background: #f1f1f1;
 }
 
