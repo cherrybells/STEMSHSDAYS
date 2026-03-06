@@ -72,12 +72,6 @@ container.addEventListener('touchstart', () => {
     else jump();
 });
 
-document.addEventListener('touchstart', e => {
-    e.preventDefault();
-    if (game_state !== 'Play') startGame();
-    else jump();
-}, { passive: false });
-
 /* ===== MAIN LOOP ===== */
 function gameLoop(timestamp) {
     if (game_state !== 'Play') return;
