@@ -12,10 +12,10 @@
 
 /* MAIN GAME CONTAINER */
 .maincontent {
-    position: relative;       /* container for absolute elements */
+    position: relative;
     width: 100%;
-    height: 80vh;             /* fits below header/nav, adjust as needed */
-    overflow-x: hidden;         /* prevents game overflow */
+    min-height: 80vh;   /* allows page to expand */
+    overflow-x: hidden;
     background: #f1f1f1;
 }
 
