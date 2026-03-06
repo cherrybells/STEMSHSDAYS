@@ -93,6 +93,39 @@
    MOBILE OPTIMIZATION
 ========================= */
 @media only screen and (max-width: 768px) {
+   /* =========================
+   MOBILE SIZE ADJUSTMENT
+========================= */
+@media screen and (max-width: 768px) {
+
+    /* Smaller header */
+    .header {
+        padding: 10px;
+    }
+
+    .header h1 {
+        font-size: 22px;
+    }
+
+    /* Smaller navigation */
+    .topnav a {
+        padding: 8px 6px;
+        font-size: 12px;
+    }
+
+    /* Reduce footer height */
+    .footer {
+        padding: 10px;
+        font-size: 12px;
+    }
+
+    /* Give more space to the game */
+    .maincontent {
+        min-height: 70vh;
+        padding: 5px;
+    }
+
+}
     .message {
         font-size: 5vw;
         top: 45%;
