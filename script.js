@@ -67,7 +67,7 @@ document.addEventListener('keydown', e => {
     if (e.key === 'ArrowUp') jump();
 });
 
-document.addEventListener('click', () => {
+container.addEventListener('touchstart', () => {
     if (game_state !== 'Play') startGame();
     else jump();
 });
