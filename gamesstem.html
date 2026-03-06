@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FLAPPY HIRONO GAME - Home</title>
+    <link rel="icon" type="image/png" href="images/favicon.ico"/>
+    <link rel="stylesheet" href="gamestyles.css"> <!-- game styles -->
+    <style>
+        /* ===== STANDARD HOME STYLES ===== */
+        * { box-sizing: border-box; }
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: url("pictures/FORBACKGROUND.png");
+            overflow-x: hidden;
+        }
+
+        /* Header */
+        .header {
+            padding: 30px;
+            text-align: center;
+            background: linear-gradient(white, blue);
+        }
+
+        .header h1 { font-size: 50px; margin: 0; }
+
+        /* Top navigation bar */
+        .topnav {
+        display: flex;
+        flex-wrap: wrap;
+        background-color: #0D1B3A;
+        margin-bottom: 10px;
+        }
+
+        .topnav a {
+        flex: 1 1 auto;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        color: #f2f2f2;
+        }
+
+        .topnav a:hover {
+        background-color: #ddd;
+        color: black;
+        }
+
+        .topnav a:last-child {
+        order: 1; /* Moves "Games" to the right on large screens */
+        }
+
+        /* Game container */
+        .maincontent {
+            width: 100%;
+            min-height: 80vh;
+            background: #f1f1f1;
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+
+        /* Footer */
+        .footer {
+            padding: 20px;
+            text-align: center;
+            background: #ddd;
+            margin-top: 20px;
+        }
+
+        /* Responsive nav */
+        @media screen and (max-width: 400px) {
+            .topnav a { float: none; width: 100%; }
+        }
+    </style>
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+    <!-- HEADER -->
+    <div class="header">
+        <h1>LCBA'S FLAPPY HIRONO</h1>
+    </div>
+
+    <div class="topnav">
+        <a href="index.html">Main Page</a>
+        <a href="About STEM.html">STEM</a>
+        <a href="Image Gallery.html">Image Gallery</a>
+        <a href="Video Gallery.html">Video Gallery</a>
+        <a href="gamesstem.html" style="float:right">Games</a>
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <div class="maincontent">
+
+        <!-- GAME BACKGROUND -->
+        <div class="background"></div>
+
+        <!-- HIRONO BIRD -->
+        <img src="pictures/hironobird.png" alt="BIRD" class="hironobird" id="bird">
+
+        <!-- MESSAGE -->
+        <div class="message">
+            Tap / Click / Press Enter to Start
+            <p><span style="color: blue;">↑</span> Jump</p>
+        </div>
+
+        <!-- SCORE -->
+        <div class="score">
+            <span class="score_title"></span>
+            <span class="score_val"></span>
+        </div>
+
+    </div>
+</body>
+</html>
